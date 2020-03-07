@@ -10,6 +10,8 @@ section > div {
   display: none;
 }
 
+/* the ~ means the second selector does NOT have to immediately follow the first one - it will select all elements that is preceded by the former selector */
+
 #radio-section-0:checked ~ #section-0 > div {
   display: block;
 }
@@ -20,4 +22,10 @@ section > div {
 
 #radio-section-2:checked ~ #section-2 > div {
   display: block;
+}
+
+@media print {
+  @page {
+    size: letter;
+  }
 }
